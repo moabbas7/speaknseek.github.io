@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+
+/* Nav Bar */
+header
+{
+  position: relative;
+  /*max-width: 1800px;
+  margin: 0px auto;
+  padding: 10px;*/
+  background:#093161;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.speak
+{
+  color: #fff ;
+  height: 60px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  font-weight: 700;
+  
+}
+nav
+{
+  float: right;
+
+}
+.clearfix
+{
+  clear: both;
+}
+nav ul
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li
+{
+  list-style-type: none;
+}
+nav ul li a
+{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  
+  color: #fff;
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+  background: #000000 ;
+  color: #fff;
+  transition: 0.5s;
+}
+@media (max-width: 1200px)
+{
+  header
+  {
+    margin: 2px;
+  }
+}
+@media (max-width: 768px)
+{
+  .menu-toggle
+  {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu-toggle:before
+  {
+    content: '\f0c9';
+    font-family: fontAwesome;
+  }
+  .menu-toggle.active:before
+  {
+    content: '\f00d';
+  }
+  nav
+  {
+    display: none;
+  }
+  nav.active
+  {
+    display: block;
+    width: 100%;
+  }
+  nav.active ul
+  {
+    display: block;
+  }
+  nav.active ul li
+  {
+    margin: 0;
+  }
+}
+
+
+
+/* Base 
+html {
+  overflow-x: hidden; }
+
+body {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem; }
+
+::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+
+
+/* Blocks */
+.site-blocks-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center center;
+  background-color: #ffdd40; }
+  .site-blocks-cover.overlay {
+    position: relative; }
+    .site-blocks-cover.overlay:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.1); }
+  .site-blocks-cover.overflow-hidden {
+    overflow: hidden; }
+  .site-blocks-cover, .site-blocks-cover > .container > .row {
+    height: calc(80vh);
+    min-height: 400px; }
+  .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
+    min-height: 400px;
+    height: calc(20vh); }
+  @media (max-width: 991.98px) {
+    .site-blocks-cover .intro-text {
+      margin-top: 30%; } }
+  .site-blocks-cover h1 {
+    font-size: 4rem;
+    color: #000;
+    font-weight: 900; }
+    @media (max-width: 991.98px) {
+      .site-blocks-cover h1 {
+        font-size: 2rem; } }
+  @media (max-width: 991.98px) {
+    .site-blocks-cover .cover-img {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto; } }
+  .site-blocks-cover p {
+    color: #000;
+    font-size: 1.3rem; }
+    .site-blocks-cover p a {
+      color: #fd7e14; }
+
+.h6 {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+
+/*about us */
+@media (max-width: 991.98px) {
+  .blog-post-entry {
+    margin-top: -300px;
+    padding-top: 300px;
+  }
+}
+
+.half .image, .half .text {
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .half .image, .half .text {
+    width: 100%;
+  }
+}
+
+.half .image {
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 991.98px) {
+  .half .image {
+    height: 300px;
+  }
+}
+
+.half .text {
+  padding: 100px 7%;
+}
+
+@media (max-width: 991.98px) {
+  .half .text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.half .text h2 {
+  font-size: 40px;
+}
+
+.post-list li a .image {
+  width: 150px;
+}
+
+/* new image */
+#banner {
+    background-image: url("http://res.cloudinary.com/dd14jlgaz/image/upload/v1512666543/Mental%20Health/Jumbo_banner.png");
+    background-color: #17234E;
+    margin-bottom: 0;`enter code here`
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.photos {
+  max-width: 250px;
+  max-height: 200px;
+  display: block;
+  margin: auto;
+}
+
+.btn-width {
+  width: 250px;
+  white-space: normal;
+}
+
+.clickable{
+  cursor:pointer;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.add-padding {
+  padding-top:50px;
+}
+
+
+
+/*Footer*/
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans",sans-serif;
+  color: #fff;
+}
+
+footer{
+  background: #093161;
+  padding: 90px 0;
+}
+
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo{
+  width: 180px;
+}
+
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: #fff;
+  margin-right: 25px;
+  font-size: 22px;
+  
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: #fc5c65;
+}
+
+.right-col h1{
+  font-size: 26px;
+}
+
+.border{
+  width: 100px;
+  height: 4px;
+  background: #fc5c65;
+}
+
+.newsletter-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*.txtb{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+*/
+.btn{
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #f1f1f1;
+  background: #fc5c65;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  min-width: 280px;
+  transition: opacity .3s linear;
+}
+
+.btn:hover{
+  opacity: .7;
+}
+
+.page-content{
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    }
+}
+
